@@ -432,7 +432,7 @@ const html = `
             const data = await response.json();
 
             if (!data.ok) {
-                console.log(`HTTP error! Status: ${data.message}`);
+                console.log(`HTTPS error! Status: ${data.message}`);
             }
 
             console.log('Server response:', data.message);
