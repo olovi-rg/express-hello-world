@@ -269,6 +269,7 @@ const html = `
     }
 </style>
 
+
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46254236.js"></script>
 <!-- End of HubSpot Embed Code -->
@@ -399,7 +400,6 @@ const html = `
 
   <script>
 
-    const serverURL = 'https://express-hello-world-6g9n.onrender.com/'
 
 
     const customForm = document.getElementById('contactForm-custom')
@@ -432,7 +432,7 @@ const html = `
             const data = await response.json();
 
             if (!data.ok) {
-                console.log(`HTTPS error! Status: ${data.message}`);
+                console.log(`HTTP error! Status: ${data.message}`);
             }
 
             console.log('Server response:', data.message);
